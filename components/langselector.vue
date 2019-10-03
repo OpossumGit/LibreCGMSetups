@@ -1,6 +1,6 @@
 Vue.component('langselector', {
   data: () => ({
-    langs: ['bs', 'en']
+    langs: ['hr', 'en']
   }),
   template:`
   <div class="locale-changer">
@@ -10,6 +10,5 @@ Vue.component('langselector', {
       label="Language"
       outlined
     ></v-select>
-  </div>
-</template>`
+  </div>`
 });

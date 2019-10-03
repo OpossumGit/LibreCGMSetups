@@ -1,5 +1,5 @@
 const i18n = new VueI18n({
-  locale: 'bs', // set locale
+  locale: 'hr', // set locale
   messages: translations, // set locale messages
 })
 
