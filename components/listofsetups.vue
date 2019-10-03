@@ -189,7 +189,7 @@ Vue.component('listofsetups', {
         :key="setup.id"
              
       >
-       Konfiguracija {{ index +1}} 
+       {{ $t("global.configuration") }} {{ index +1}} 
       </v-tab>
     </v-tabs>
     
@@ -202,15 +202,15 @@ Vue.component('listofsetups', {
      <v-container class="pa-2" fluid>
       <v-row>
         <v-col cols="12"  sm="4">
-            <p class="subtitle-2">Aplikacija za prikupljanje podataka: {{ setup.left}}</p>
+            <p class="subtitle-2">{{ $t("global.collection_application") }}: {{ setup.left}}</p>
           <comp :kind="setup.left"></comp>
         </v-col>
           <v-col cols="12" sm="4">
-              <p class="subtitle-2">Podaci se prenose preko: {{ setup.center}} </p>
+              <p class="subtitle-2">{{ $t("global.transfer_application") }}: {{ setup.center}} </p>
           <comp :kind="setup.center"></comp>
         </v-col>
           <v-col cols="12" sm="4">
-              <p class="subtitle-2">Aplikacija za udaljeno čitanje podataka: {{setup.right}}</p>
+              <p class="subtitle-2">{{ $t("global.receiver_application") }}: {{setup.right}}</p>
           <comp :kind="setup.right"></comp>
         </v-col>
       </v-row>
